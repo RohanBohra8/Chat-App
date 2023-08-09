@@ -14,7 +14,7 @@ const server = http.createServer(chatapp);
 //invoking Server method of socket.io and passing server created above in its parameter
 const io = new Server(server,{
     cors: {
-        origin: "http://localhost:3000", //this will show that it is okay to accept url from this port
+        origin: "https://chatty-chatters.netlify.app", //this will show that it is okay to accept url from this port
         methods: ["GET","POST"], //specify what type of request is allowed
     },
 });
